@@ -1,0 +1,74 @@
+.clients {
+	background-color: grey;
+	padding: 8rem 0;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+
+	}
+	&__slider{
+		padding: 50px 0 ;
+	}
+}
+
+.slider {
+
+	&__item {
+		
+		user-select: none;
+		background-color: #ffffff;
+		justify-content: center;
+		box-shadow: 0px 0px 27px 0px rgba(20, 20, 21, 0.09);
+		border-radius: 1px;
+		padding: 105px 20px 50px 20px;
+		height: 271px;
+		position: relative;
+		overflow: visible;
+	}
+	&__img {
+		border-radius: 50%;
+		top:  0;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		position: absolute;
+		width: 99px;
+		height: 99px;
+		top: 0;
+		overflow: hidden;
+		img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__body {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+	&__p {
+		opacity: 0.7;
+		font-family: 'Source Sans Pro';
+		font-size: 17px;
+		line-height: 27px;
+		font-weight: 400;
+		color: #000000;
+		text-align: center;
+	}
+	&__name {
+		text-align: center;
+		font-family: 'Source Sans Pro';
+		font-size: 17px;
+		line-height: 27px;
+		font-weight: 600;
+		color: #000000bb;
+		:first-child {
+			color: #000000;
+		}
+	}
+}

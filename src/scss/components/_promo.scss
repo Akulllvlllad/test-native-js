@@ -1,0 +1,78 @@
+// @import '../lib/vars.scss'
+
+.promo {
+	background-color: $--header_BG;
+	&__inner {
+		padding: 20rem 0 0 0;
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+	}
+}
+
+.form {
+	margin: 0 0 -20px 0;
+	padding: 1.7rem 2.85rem;
+	background-color: $--main_BG;
+	display: flex;
+	flex-direction: column;
+	gap: 1.8rem;
+	width: max-content;
+	box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
+	border-radius: 2px;
+	&__title {
+		text-align: center;
+		line-height: 2rem;
+		font-weight: 600;
+		opacity: 0.9;
+		color: $--colorFontPromo;
+		font-size: 1.3rem;
+		:first-child {
+			color: $--title_select;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+		 input {
+			padding: 0.8rem 0px;
+			width: 294px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+			color: $--colorFontMain;
+			font-size: 1rem;
+		}
+		textarea{
+			padding: 0.8rem 0px;
+			width: 294px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+			color: $--colorFontMain;
+			font-size: 1rem;
+			resize: none;
+		}
+	}
+	&__button {
+		font-size: 1.2rem;
+		line-height: 2rem;
+		font-weight: 400;
+		color: white;
+		background-color: #ff5c36;
+		border: 1px solid rgba(1, 2, 2, 0.06);
+		box-shadow: 2px 11px 20px -1px rgba(20, 20, 21, 0.07);
+		border-radius: 27px;
+		padding: 0.6rem 3.5rem;
+	}
+	&__wrapperButton {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+
+._error{
+	
+	box-shadow: 0px 9px 4px -7px red;
+	color: red !important;
+}

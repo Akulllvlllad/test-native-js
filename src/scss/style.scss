@@ -1,0 +1,53 @@
+@import './fonts';
+@import './lib/normalize';
+@import './components/all';
+@import './lib/media.scss';
+@import './lib/vars.scss';
+
+.wrapper {
+	background-color: $--main_BG;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 0 5px;
+}
+
+main {
+	flex: 1 1 auto;
+	width: 100%;
+}
+
+.titleSections {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	max-width: 705px;
+	margin: 0 auto;
+	&__title {
+		opacity: 0.94;
+		font-size: 3.57rem;
+		line-height: 3.5rem;
+		font-weight: 600;
+		color: $--colorFontPromo;
+		
+		text-align: center;
+		:first-child{
+			color: $--active;
+		}
+	}
+	&__description {
+		opacity: 0.65;
+		text-align: center;
+		font-size: 1.14rem;
+		line-height:2rem;
+		font-weight: 400;
+		color: $--colorFontMain;
+	}
+}
